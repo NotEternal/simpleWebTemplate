@@ -1,0 +1,13 @@
+.main {
+    text-align: center;
+}
+
+.intro {
+    padding: 12em 0;
+    border-bottom: .1em solid var(--light-dark);
+}
+
+.about {
+    padding: 12em 0;
+    border-bottom: .1em solid var(--light-dark);
+}

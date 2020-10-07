@@ -1,0 +1,21 @@
+.header {
+    height: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-dark);
+}
+
+.header__list-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__list-links li + li {
+    margin-left: 1.5em;
+}
+
+.header__link {
+    font-size: 1.2em;
+}
