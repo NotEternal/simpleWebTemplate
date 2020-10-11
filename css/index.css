@@ -23,11 +23,22 @@
 }
 
 html {
-  font-size: .875em; // 14px
+  font-size: .875em;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
   letter-spacing: 0.1em;
+  scroll-behavior: smooth;
+
+  --blue: #2170e7;
+  --white: #fff;
+  --light: #f5f5fa;
+  --dark: #23272b;
+  --light-dark: #2b3338;
+
+  --background-color: var(--dark);
+  --color: var(--white);
+  --key-color: var(--blue);
 }
 
 body {
@@ -35,17 +46,8 @@ body {
   min-height: 100vh;
   margin: 0 auto;
   padding: 0;
-
-  --blue: #2170e7;
-  --blue-opacity: #2170e770;
-  --white: #fff;
-  --light: #f5f5fa;
-  --dark: #23272b;
-  --light-dark: #2b3338;
-  --key-color: var(--blue);
-
-  background: var(--dark);
-  color:  var(--white);
+  background: var(--background-color);
+  color:  var(--color);
 }
 
 *,
@@ -77,10 +79,12 @@ a:active {
 
 button,
 input,
-textarea {
+textarea,
+label {
   cursor: pointer;
   font-size: inherit;
   font-family: inherit;
+  letter-spacing: inherit;
 }
 
 ::selection {
@@ -96,6 +100,7 @@ textarea {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-bottom: .1em solid var(--light-dark);
 }
 
 .section__title {

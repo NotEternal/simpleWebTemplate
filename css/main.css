@@ -3,11 +3,17 @@
 }
 
 .intro {
-    padding: 12em 0;
-    border-bottom: .1em solid var(--light-dark);
+    padding: 20rem;
 }
 
 .about {
-    padding: 12em 0;
-    border-bottom: .1em solid var(--light-dark);
+    padding: 20rem;
+}
+
+.works {
+    padding: 20rem;
+}
+
+.skills {
+    padding: 20rem;
 }
