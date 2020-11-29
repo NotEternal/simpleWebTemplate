@@ -1,15 +1,12 @@
 'use strict';
+
 /* ------------------------------------------
  * Theme toggle
  */
 
 document.querySelector('#theme-toggle').addEventListener('click', () => {
-  document.body.classList.toggle('dark-theme');
+  document.body.classList.toggle('light-theme');
 });
-
-/* ------------------------------------------
- * Slider
- */
 
 /* ------------------------------------------
  * Footer copyright

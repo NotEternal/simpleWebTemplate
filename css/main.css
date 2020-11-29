@@ -1,9 +1,40 @@
+/* ------------------------------------------
+ * Common styles
+ */
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 0.1em solid var(--border-color);
+}
+
+.section__title {
+  font-size: 2.6em;
+  margin-bottom: 1.5em;
+}
+
+.section__description {
+  max-width: 30em;
+  font-size: 1.1em;
+  text-align: center;
+  color: var(--light);
+}
+
+/* ------------------------------------------
+ */
+
 .main {
   /*  */
 }
 
 .intro {
   padding: 20rem;
+}
+
+.intro__title {
+  font-size: 3.4em;
 }
 
 .about {

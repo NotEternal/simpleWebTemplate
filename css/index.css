@@ -35,14 +35,8 @@ html {
   letter-spacing: 0.08em;
   scroll-behavior: smooth;
 
-  --blue: #2170e7;
   --white: #fff;
-  --light: #eaeaec;
-
-  --black: #0c0c0c;
   --dark: #191b1f;
-  --light-dark: #323b41;
-
   --background-color: var(--dark);
   --color: var(--white);
 }
@@ -52,17 +46,24 @@ body {
   min-height: 100vh;
   margin: 0 auto;
   padding: 0;
+  transition: 0.3s;
 
-  --brand-color: var(--blue);
-  --box-shadow-color: var(--black);
+  --light: #eaeaec;
+  --light-dark: #343a44;
+  --brand-color: rgb(58, 160, 255);
+  --border-color: #343a44;
+  --box-shadow: 0 0.3em 1em rgba(0, 0, 0, 0.212);
 
   background: var(--background-color);
   color: var(--color);
 }
 
-body.dark-theme {
-  --brand-color: var(--blue);
-  --box-shadow-color: var(--black);
+body.light-theme {
+  --light: #141414;
+  --light-dark: #505969;
+  --brand-color: rgb(38, 150, 255);
+  --border-color: rgb(170, 170, 170);
+  --box-shadow: 0 0em 1.4em rgba(0, 0, 0, 0.705);
 
   background: var(--color);
   color: var(--background-color);
@@ -108,25 +109,4 @@ label {
 ::selection {
   background-color: transparent;
   color: var(--brand-color);
-}
-
-/* -------------------------------------------- */
-/* COMMON STYLES */
-
-.section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-bottom: 0.1em solid var(--light-dark);
-}
-
-.section__title {
-  margin-bottom: 1.6em;
-}
-
-.section__description {
-  max-width: 30em;
-  text-align: center;
-  color: var(--light);
 }
