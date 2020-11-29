@@ -1,4 +1,20 @@
 'use strict';
+/* ------------------------------------------
+ * Theme toggle
+ */
 
-// footer copyright
-document.querySelector('.footer__copyright').textContent += new Date().getFullYear();
+document.querySelector('#theme-toggle').addEventListener('click', () => {
+  document.body.classList.toggle('dark-theme');
+});
+
+/* ------------------------------------------
+ * Slider
+ */
+
+/* ------------------------------------------
+ * Footer copyright
+ */
+
+document.querySelector(
+  '.footer__info_copyright'
+).textContent += new Date().getFullYear();

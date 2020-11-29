@@ -3,42 +3,48 @@
 @import url('./main.css');
 @import url('./footer.css');
 
-/* cyrillic */
+/* latin-ext */
 @font-face {
-  font-family: 'Roboto';
+  font-family: 'Work Sans';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu5mxKOzY.woff2) format('woff2');
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  src: url(https://fonts.gstatic.com/s/worksans/v8/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K0nXBiEJpp_c.woff2)
+    format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
 @font-face {
-  font-family: 'Roboto';
+  font-family: 'Work Sans';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/worksans/v8/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K0nXBi8Jpg.woff2)
+    format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
 }
 
 html {
-  font-size: .875em;
+  font-size: 0.875em;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Work Sans', sans-serif;
   line-height: 1.5;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   scroll-behavior: smooth;
 
   --blue: #2170e7;
   --white: #fff;
-  --light: #f5f5fa;
-  --dark: #23272b;
-  --light-dark: #2b3338;
+  --light: #eaeaec;
+
+  --black: #0c0c0c;
+  --dark: #191b1f;
+  --light-dark: #323b41;
 
   --background-color: var(--dark);
   --color: var(--white);
-  --key-color: var(--blue);
 }
 
 body {
@@ -46,8 +52,20 @@ body {
   min-height: 100vh;
   margin: 0 auto;
   padding: 0;
+
+  --brand-color: var(--blue);
+  --box-shadow-color: var(--black);
+
   background: var(--background-color);
-  color:  var(--color);
+  color: var(--color);
+}
+
+body.dark-theme {
+  --brand-color: var(--blue);
+  --box-shadow-color: var(--black);
+
+  background: var(--color);
+  color: var(--background-color);
 }
 
 *,
@@ -65,16 +83,16 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 a:hover {
-color: var(--key-color);
+  color: var(--brand-color);
 }
 
 a:active {
-    opacity: .5;
-    transition: .02s;
+  opacity: 0.5;
+  transition: 0.02s;
 }
 
 button,
@@ -89,26 +107,26 @@ label {
 
 ::selection {
   background-color: transparent;
-  color: var(--key-color);
+  color: var(--brand-color);
 }
 
 /* -------------------------------------------- */
 /* COMMON STYLES */
 
 .section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-bottom: .1em solid var(--light-dark);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 0.1em solid var(--light-dark);
 }
 
 .section__title {
-    margin-bottom: 1.6em;
+  margin-bottom: 1.6em;
 }
 
 .section__description {
-    max-width: 30em;
-    text-align: center;
-    color:  var(--light);
+  max-width: 30em;
+  text-align: center;
+  color: var(--light);
 }

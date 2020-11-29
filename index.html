@@ -1,71 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="robots" content="all">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Change it -->
+    <title>Page title</title>
+    <meta name="description" content="" />
+    <meta name="robots" content="all" />
 
     <!-- desktop ico -->
-    <link rel="icon" type="image/ico" href="./img/favicon/">
+    <link rel="icon" type="image/ico" href="./img/favicon/" />
     <!-- desktop png -->
-    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/" />
     <!-- apple -->
-    <link rel="apple-touch-icon-precomposed" href="./img/favicon/">
+    <link rel="apple-touch-icon-precomposed" href="./img/favicon/" />
     <!-- android -->
-    <link rel="shortcut icon" sizes="192x192" href="./img/favicon/">
+    <link rel="shortcut icon" sizes="192x192" href="./img/favicon/" />
     <!-- webmanifest -->
-    <link rel="manifest" href="./img/favicon/">
+    <link rel="manifest" href="./img/favicon/" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <nav class="header__nav">
-            <ul class="header__list-links">
-                <li>
-                    <a href="#intro-section" class="header__link">Intro</a>
-                </li>
-                <li>
-                    <a href="#about-section" class="header__link">About</a>
-                </li>
-                <li>
-                    <a href="#works-section" class="header__link">Works</a>
-                </li>
-                <li>
-                    <a href="#skills-section" class="header__link">Skills</a>
-                </li>
-            </ul>
-        </nav>
+      <div class="header__logo-container">
+        <!-- Change this logo -->
+        <?xml version="1.0" encoding="iso-8859-1"?>
+        <svg
+          class="header__logo"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          x="0px"
+          y="0px"
+          width="440.347px"
+          height="440.348px"
+          viewBox="0 0 440.347 440.348"
+        >
+          <polygon points="219.012,0 94.028,229.376 251.129,175.46" />
+          <polygon points="426.59,133.025 94.028,238.533 189.584,298.166" />
+          <polygon points="3.826,440.348 303.497,371.558 436.522,137.626" />
+        </svg>
+      </div>
+
+      <nav class="header__nav">
+        <ul class="header__list-links">
+          <li>
+            <a href="#intro-section" class="header__link">Intro</a>
+          </li>
+          <li>
+            <a href="#about-section" class="header__link">About</a>
+          </li>
+          <li>
+            <a href="#works-section" class="header__link">Works</a>
+          </li>
+          <li>
+            <a href="#skills-section" class="header__link">Skills</a>
+          </li>
+          <li>
+            <a href="#contacts-section" class="header__link">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__theme-container">
+        <input type="checkbox" id="theme-toggle" />
+        <label class="fake-theme-toggle" for="theme-toggle"></label>
+      </div>
     </header>
 
     <main class="main">
-        <section class="section intro" id="intro-section">
-            <h1 class="section__title intro__title">This is simple web-template</h1>
-            <p class="section__description intro__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quas quod quam! Velit, praesentium, at.</p>
-        </section>
-        <section class="section about" id="about-section">
-            <h2 class="section__title about__title">About section</h2>
-            <p class="section__description about__description">Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Ex, perspiciatis blanditiis et! Ea ullam facilis dolore pariatur, corporis qui deleniti, et veniam cupiditate quidem enim odit modi, distinctio in, provident.</p>
-        </section>
-        <section class="section skills" id="skills-section">
-            <h1 class="section__title skills__title">Skills section</h1>
-            <p class="section__description skills__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quas quod quam! Velit, praesentium, at.</p>
-        </section>
-        <section class="section works" id="works-section">
-            <h1 class="section__title works__title">Works section</h1>
-            <p class="section__description works__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quas quod quam! Velit, praesentium, at.</p>
-        </section>
+      <section class="section intro" id="intro-section">
+        <h1 class="section__title intro__title">This is simple web-template</h1>
+        <p class="section__description intro__description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quas
+          quod quam! Velit, praesentium, at. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Obcaecati totam ipsam delectus similique
+          quia cumque modi consectetur excepturi veritatis nemo necessitatibus
+          exercitationem pariatur corrupti deleniti eaque dolores ipsa, quisquam
+          cum?
+        </p>
+      </section>
+      <section class="section about" id="about-section">
+        <h2 class="section__title about__title">About</h2>
+        <p class="section__description about__description">
+          Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Ex,
+          perspiciatis blanditiis et! Ea ullam facilis dolore pariatur, corporis
+          qui deleniti, et veniam cupiditate quidem enim odit modi, distinctio
+          in, provident.
+        </p>
+      </section>
+      <section class="section works" id="works-section">
+        <h1 class="section__title works__title">Works</h1>
+        <p class="section__description works__description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quas
+          quod quam! Velit, praesentium, at.
+        </p>
+      </section>
+      <section class="section skills" id="skills-section">
+        <h1 class="section__title skills__title">Skills</h1>
+        <p class="section__description skills__description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quas
+          quod quam! Velit, praesentium, at.
+        </p>
+      </section>
+      <section class="section contacts" id="contacts-section">
+        <h1 class="section__title contacts__title">Contacts</h1>
+        <p class="section__description skills__description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quas
+          quod quam! Velit, praesentium, at.
+        </p>
+      </section>
     </main>
 
     <footer class="footer">
-        <p class="footer__copyright">All prives Reserved ©</<p>
+      <p class="footer__info footer__info_description">All prives Reserved</p>
+      <!-- change <Author> on your name or brand name -->
+      <p class="footer__info footer__info_copyright">&#169; Author &#32;</p>
     </footer>
 
     <script src="js/index.js"></script>
-</body>
-
+  </body>
 </html>
