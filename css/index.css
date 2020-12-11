@@ -14,6 +14,7 @@
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
     U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
+
 /* latin */
 @font-face {
   font-family: 'Work Sans';
@@ -36,7 +37,7 @@ html {
   scroll-behavior: smooth;
 
   --white: #fff;
-  --dark: #191b1f;
+  --dark: #131313;
   --background-color: var(--dark);
   --color: var(--white);
 }
@@ -49,9 +50,9 @@ body {
   transition: 0.3s;
 
   --light: #eaeaec;
-  --light-dark: #343a44;
+  --light-dark: #1f2124;
   --brand-color: rgb(58, 160, 255);
-  --border-color: #343a44;
+  --border-color: #2a2b2e;
   --box-shadow: 0 0.3em 1em rgba(0, 0, 0, 0.212);
 
   background: var(--background-color);
@@ -60,9 +61,9 @@ body {
 
 body.light-theme {
   --light: #141414;
-  --light-dark: #505969;
+  --light-dark: #5c5c5c;
   --brand-color: rgb(38, 150, 255);
-  --border-color: rgb(170, 170, 170);
+  --border-color: rgb(180, 180, 180);
   --box-shadow: 0 0em 1.4em rgba(0, 0, 0, 0.705);
 
   background: var(--color);
