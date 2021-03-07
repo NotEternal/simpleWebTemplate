@@ -4,10 +4,11 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 5em;
+  height: 6em;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  border-bottom: 1px solid var(--border-color);
   box-shadow: var(--box-shadow);
   background-color: var(--light-dark);
   color: var(--white);
@@ -20,11 +21,11 @@
 }
 
 .header__list-links li + li {
-  margin-left: 1.5em;
+  margin-left: 2em;
 }
 
 .header__link {
-  font-size: 1.2em;
+  font-size: 1.6em;
 }
 
 .header__logo-container {
@@ -40,29 +41,39 @@
 
 .header__theme-container {
   position: relative;
-  width: 2.4em;
-  height: 1.4em;
+  width: 2.5em;
+  height: 1.6em;
   border-radius: 1em;
-  border: 0.1em solid var(--color);
+  border: 1px solid var(--color);
 }
 
 #theme-toggle {
-  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
 }
 
 .fake-theme-toggle {
   position: absolute;
   left: calc(6%);
-  top: 0.1em;
+  top: 50%;
+  transform: translateY(-50%);
   display: inline-block;
-  width: 1em;
-  height: 1em;
+  width: 1.1rem;
+  height: 1.1rem;
   border-radius: 50%;
   background-color: var(--white);
-  transition: 0.3s;
 }
 
-.fake-theme-toggle:hover {
+.header__theme-container:hover {
+  border-color: var(--brand-color);
+}
+
+.header__theme-container:hover .fake-theme-toggle {
   background-color: var(--brand-color);
 }
 

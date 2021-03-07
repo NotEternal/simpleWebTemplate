@@ -8,6 +8,8 @@
   align-items: center;
   justify-content: center;
   border-bottom: 0.1em solid var(--border-color);
+  box-shadow: var(--box-shadow);
+  background-color: var(--background-color);
 }
 
 .section__title {
@@ -17,7 +19,7 @@
 
 .section__description {
   max-width: 30em;
-  font-size: 1.1em;
+  font-size: 1.3em;
   text-align: center;
   color: var(--light);
 }

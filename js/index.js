@@ -1,11 +1,11 @@
-'use strict';
+"use strict";
 
 /* ------------------------------------------
  * Theme toggle
  */
 
-document.querySelector('#theme-toggle').addEventListener('click', () => {
-  document.body.classList.toggle('light-theme');
+document.querySelector("#theme-toggle").addEventListener("click", () => {
+  document.body.classList.toggle("light-theme");
 });
 
 /* ------------------------------------------
@@ -13,5 +13,5 @@ document.querySelector('#theme-toggle').addEventListener('click', () => {
  */
 
 document.querySelector(
-  '.footer__info_copyright'
+  ".footer__info_copyright"
 ).textContent += new Date().getFullYear();
