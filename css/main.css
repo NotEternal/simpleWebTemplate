@@ -3,13 +3,12 @@
  */
 
 .section {
+  padding: 20rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   border-bottom: 0.1em solid var(--border-color);
-  box-shadow: var(--box-shadow);
-  background-color: var(--background-color);
 }
 
 .section__title {
@@ -21,36 +20,4 @@
   max-width: 30em;
   font-size: 1.3em;
   text-align: center;
-  color: var(--light);
-}
-
-/* ------------------------------------------
- */
-
-.main {
-  /*  */
-}
-
-.intro {
-  padding: 20rem;
-}
-
-.intro__title {
-  font-size: 3.4em;
-}
-
-.about {
-  padding: 20rem;
-}
-
-.works {
-  padding: 20rem;
-}
-
-.skills {
-  padding: 20rem;
-}
-
-.contacts {
-  padding: 20rem;
 }

@@ -37,9 +37,7 @@ html {
   scroll-behavior: smooth;
 
   --white: #fff;
-  --dark: #131313;
-  --background-color: var(--dark);
-  --color: var(--white);
+  --dark: #0e0e0e;
 }
 
 body {
@@ -50,10 +48,12 @@ body {
   transition: 0.3s;
 
   --light: #eaeaec;
-  --light-dark: #1f2124;
+  --light-dark: #191a1b;
   --brand-color: rgb(58, 160, 255);
   --border-color: #2a2b2e;
   --box-shadow: 0 0.6em 1em rgba(0, 0, 0, 0.212);
+  --background-color: var(--dark);
+  --color: var(--white);
 
   background: var(--background-color);
   color: var(--color);
@@ -61,13 +61,12 @@ body {
 
 body.light-theme {
   --light: #141414;
-  --light-dark: #5c5c5c;
+  --light-dark: #d4d4d4;
   --brand-color: rgb(38, 150, 255);
-  --border-color: rgb(180, 180, 180);
-  --box-shadow: 0 0.6em 1em rgba(0, 0, 0, 0.548);
-
-  background: var(--color);
-  color: var(--background-color);
+  --border-color: rgb(167, 167, 167);
+  --box-shadow: 0 0.6em 1.2em rgba(0, 0, 0, 0.205);
+  --background-color: var(--white);
+  --color: var(--dark);
 }
 
 *,

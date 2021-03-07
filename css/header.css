@@ -11,7 +11,7 @@
   border-bottom: 1px solid var(--border-color);
   box-shadow: var(--box-shadow);
   background-color: var(--light-dark);
-  color: var(--white);
+  color: var(--color);
 }
 
 .header__list-links {
